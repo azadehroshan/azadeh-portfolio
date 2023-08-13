@@ -1,0 +1,428 @@
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: url("./Raleway/Raleway-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("./Raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("./Raleway/Raleway-Regular.ttf");
+}
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background-color: #090e16;
+  width: 100%;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(123, 74, 226, 0.1);
+  border-radius: 7px;
+  width: 100%;
+}
+
+.logoCon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+header ul {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  list-style: none;
+  gap: 15px;
+  margin: 0 0 0 30px;
+  padding: 20px;
+}
+header ul li {
+  padding-left: 5px;
+}
+header ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+header ul a:hover {
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  text-decoration: none;
+}
+header ul a:hover {
+  transform: scale(1.2);
+  animation: anim2 500ms cubic-bezier(0.175, 0.885, 0.32, 0.275) infinite;
+  text-decoration: none;
+}
+
+.vl {
+  border-left: 6px solid #fff;
+  height: 20px;
+}
+
+.MyImage {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links p {
+  font-size: 12px;
+  color: #7b4ae2;
+}
+
+.links h1 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.links span {
+  font-size: 12px;
+  color: #999;
+}
+
+.links .icons {
+  display: flex;
+  gap: 5px;
+}
+
+.links img {
+  width: 20px;
+}
+.MyImage .profileBackground {
+  background-image: url("AvatarAndIcons.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MyImage .profileBackground img {
+  border-radius: 70%;
+  max-width: 60%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0 120px 0;
+}
+
+.Cv {
+  width: 160px;
+  color: #7b4ae2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.Cv p {
+  color: #7b4ae2;
+}
+
+.Cv a:first-child div {
+  border: none;
+}
+
+.profile-btn {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #090e16;
+  color: white;
+  border: 1px solid #7b4ae2;
+  cursor: pointer;
+  padding: 3px 2px;
+}
+
+.cv-btn {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #090e16;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+.cv-btn p {
+  font-size: 11px;
+}
+.profile-btn img {
+  width: 17px;
+  height: 17px;
+}
+.profile-btn p {
+  font-size: 13px;
+  position: relative;
+  left: -10px;
+}
+.profile-btn:hover {
+  scale: 1.07;
+}
+.jobs {
+  border-top: 1px solid rgba(123, 74, 226, 0.2);
+  border-bottom: 1px solid rgba(123, 74, 226, 0.2);
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+.roles-container {
+}
+.jobs .top {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+.jobs .top div {
+  width: 160px;
+  border: 1px solid rgba(123, 74, 226, 0.2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.jobs .top div:nth-child(2) {
+  background-color: rgba(123, 74, 226, 0.1);
+}
+.jobs .top h5 {
+  color: #fff;
+  font-size: 17px;
+  padding-top: 4px;
+}
+.jobs .top span {
+  color: #ddd;
+  font-size: 13px;
+}
+.jobs .top img {
+  width: 52px;
+  height: 44px;
+}
+
+.jobs .bottom {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  background-color: rgba(123, 74, 226, 0.1);
+  margin-top: 25px;
+  border-radius: 16px;
+  padding: 20px 0;
+}
+.jobs .bottom div {
+  width: 150px;
+  text-align: center;
+}
+.jobs .bottom span {
+  color: #7b4ae2;
+}
+.jobs .bottom h3 {
+  color: #7b4ae2;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  align-items: center;
+}
+.about .left {
+  width: 30%;
+}
+.about .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  color: #fff;
+}
+.about .name {
+  color: #7b4ae2;
+  background-color: rgba(123, 74, 226, 0.1);
+  padding: 10px 10px;
+  border-radius: 16px;
+}
+.about h3 {
+  font-size: 38px;
+  font-family: Raleway-ExtraBold;
+  padding: 10px 0;
+}
+
+.about .intro {
+  text-align: justify;
+  line-height: 1.2;
+}
+.about img {
+  width: 230px;
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.projects .linkedIn a {
+  color: #7b4ae2;
+  font-family: Raleway-Bold;
+  font-size: 25px;
+}
+.projects .linkedIn h5 {
+  color: #fff;
+  font-family: Raleway-ExtraBold;
+  font-size: 45px;
+  padding-top: 15px;
+}
+.projects .buttons {
+  padding-bottom: 7px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.projects .buttons button {
+  background: none;
+  border: 1px solid rgba(123, 74, 226, 0.5);
+  color: rgba(123, 74, 226, 0.5);
+  padding: 5px 4px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 120px;
+  cursor: pointer;
+}
+.projects .buttons img {
+  height: 30px;
+}
+
+.filter-item .item {
+  border: 1px solid #7b4ae2;
+  padding: 20px;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.filter-item h2 {
+  font-family: Raleway-ExtraBold;
+  font-size: 17px;
+  color: #ffffff;
+}
+.filter-item p {
+  font-family: Raleway;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px 0 40px 0;
+}
+.filter-item img {
+  width: 280px;
+}
+.tag {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.tag span {
+  background-color: rgba(123, 74, 226, 0.1);
+  border-radius: 7px;
+  padding: 6px 12px;
+  color: #7b4ae2;
+  font-family: Raleway-Bold;
+  font-size: 14px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.skill h4 {
+  color: #fff;
+  font-family: Raleway-Bold;
+  font-size: 35px;
+  padding-top: 40px;
+}
+.skill p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 20px;
+  padding: 15px;
+  font-family: Raleway-Regular;
+}
+.skill img {
+  width: 55px;
+  height: 55px;
+  margin: 0 5px;
+}
+.skill .iconsHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.job-ex {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.professional {
+  color: #fff;
+  width: 55%;
+}
+.academy {
+  color: #fff;
+  width: 40%;
+}
+.professional-item {
+  background: #785;
+}
+.acodemy-item {
+  background: #359;
+}
+
+.item {
+  width: 260px;
+}
+
+.item p,
+.item img {
+  width: 100%;
+}
